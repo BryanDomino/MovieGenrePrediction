@@ -1,6 +1,6 @@
 import pickle
 import numpy as np
-from keras.models import Sequential
+from tensorflow.keras.models import Sequential
 from keras.layers import Dense, Activation
 from keras import optimizers
 from sklearn.preprocessing import MultiLabelBinarizer
