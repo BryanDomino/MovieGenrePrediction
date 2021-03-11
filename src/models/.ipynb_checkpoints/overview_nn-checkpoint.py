@@ -53,14 +53,14 @@ import matplotlib.pyplot as plt
 
 # Plot training & validation accuracy values
 if keras.__version__ < '2.3.0':
-    plt.plot(history.history['acc'])
+    plt.plot(history.history['accuracy'])
 else:
     plt.plot(history.history['accuracy'])
 plt.title('Model accuracy')
 plt.ylabel('Accuracy')
 plt.xlabel('Epoch')
 plt.savefig('models/nn_figs/nn_training_validation_accuracy.png')
-plt.savefig('/mnt/artifacts/nn_figs/nn_training_validation_accuracy.png')
+plt.savefig('/mnt/artifacts/results/nn_training_validation_accuracy.png')
 
 # Plot training & validation loss values
 plt.clf()
@@ -69,7 +69,7 @@ plt.title('Model loss')
 plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.savefig('models/nn_figs/nn_training_validation_loss.png')
-plt.savefig('/mnt/artifacts/models/nn_figs/nn_training_validation_loss.png')
+plt.savefig('/mnt/artifacts/results/nn_training_validation_loss.png')
 
 print("Saved training history visualization to models/nn_figs/nn_training_validation_accuracy.png and models/nn_figs/nn_training_validation_loss.png.\n")
 ###
