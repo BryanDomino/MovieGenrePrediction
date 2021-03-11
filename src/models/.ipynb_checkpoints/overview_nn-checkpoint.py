@@ -39,7 +39,7 @@ model_textual.compile(optimizer='rmsprop',
               loss='binary_crossentropy',
               metrics=['accuracy'])
 
-## needs apt-get install graphiz && pip install pydot
+## needs apt-get install graphiz && pip install pydot...
 # from keras.utils import plot_model
 # plot_model(model_textual, to_file='models/nn_figs/model.png', show_shapes=True)
 # print("Saved visualization of model architecture to models/nn_figs/model.png.")
