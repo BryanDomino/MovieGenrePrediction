@@ -60,6 +60,7 @@ plt.title('Model accuracy')
 plt.ylabel('Accuracy')
 plt.xlabel('Epoch')
 plt.savefig('models/nn_figs/nn_training_validation_accuracy.png')
+plt.savefig('/mnt/artifacts/nn_figs/nn_training_validation_accuracy.png')
 
 # Plot training & validation loss values
 plt.clf()
@@ -68,6 +69,7 @@ plt.title('Model loss')
 plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.savefig('models/nn_figs/nn_training_validation_loss.png')
+plt.savefig('/mnt/artifacts/models/nn_figs/nn_training_validation_loss.png')
 
 print("Saved training history visualization to models/nn_figs/nn_training_validation_accuracy.png and models/nn_figs/nn_training_validation_loss.png.\n")
 ###
@@ -111,6 +113,6 @@ rec_mean = np.mean(np.asarray(recs))
 print("\nMean precision between genres is {prec_mean}.".format(prec_mean=prec_mean))
 print("Mean recall between genres is {rec_mean}.".format(rec_mean=rec_mean))
 import json
-with open('dominostats.json', 'w') as f:
+with open('/mnt/artifacts/dominostats.json', 'w') as f:
     f.write(json.dumps({"Precision": prec_mean, "Recall": rec_mean}))
 print("Saved metrics to dominostats.json. You should be able to see these on the Jobs Dashboard.")

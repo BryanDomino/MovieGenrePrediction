@@ -63,6 +63,6 @@ rec_mean = np.mean(np.asarray(recs))
 print("\nMean precision between genres is {prec_mean}.".format(prec_mean=prec_mean))
 print("Mean recall between genres is {rec_mean}.".format(rec_mean=rec_mean))
 import json
-with open('dominostats.json', 'w') as f:
+with open('/mnt/artifacts/dominostats.json', 'w') as f:
     f.write(json.dumps({"Precision": prec_mean, "Recall": rec_mean}))
 print("Saved metrics to dominostats.json. You should be able to see these on the Jobs Dashboard.")
