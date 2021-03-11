@@ -1,8 +1,8 @@
 import pickle
 import numpy as np
 from tensorflow.keras.models import Sequential
-from keras.layers import Dense, Activation
-from keras import optimizers
+from tensorflow.keras.layers import Dense, Activation
+from tensorflow.keras import optimizers
 from sklearn.preprocessing import MultiLabelBinarizer
 import keras
 from src.utils.eval_metrics import *
