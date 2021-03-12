@@ -51,6 +51,9 @@ print (classification_report(Y_test, predstfidf, target_names=genre_names)) # sa
 
 with open('models/classifier_svc.pkl','wb') as f:
     pickle.dump(classif,f)
+    
+with open('/mnt/artifacts/results/classifier_svc.pkl','wb') as f:
+    pickle.dump(classif,f)
 
 ####
 

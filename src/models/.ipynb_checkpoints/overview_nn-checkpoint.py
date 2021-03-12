@@ -78,7 +78,8 @@ score = model_textual.evaluate(X_test, Y_test, batch_size=249)
 # print("%s: %.2f%%" % (model_textual.metrics_names[1], score[1]*100))
 Y_preds=model_textual.predict(X_test)
 
-model_textual.save("models/overview_nn.h5")
+#model_textual.save("models/overview_nn.h5")
+model_textual.save("/mnt/artifacts/results/overview_nn.h5")
 print("Saved the model to models/overview_nn.h5.\n")
 
 print ("Our predictions vs actual for a sample of movies: ")

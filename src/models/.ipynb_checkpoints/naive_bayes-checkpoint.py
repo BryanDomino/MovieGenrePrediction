@@ -47,9 +47,12 @@ print("Trained using Multinomial Naive Bayes.")
 print (classification_report(Y_test, predsnb, target_names=genre_names)) # save to file to show as a result
 
 import pickle
-f2=open('models/classifier_nb.pkl','wb')
-pickle.dump(classifnb,f2)
-f2.close()
+#f2=open('models/classifier_nb.pkl','wb')
+#pickle.dump(classifnb,f2)
+#f2.close()
+
+with open('/mnt/artifacts/results/classifier_nb.pkl','wb') as f:
+    pickle.dump(classifnb,f)
 
 
 ##########
