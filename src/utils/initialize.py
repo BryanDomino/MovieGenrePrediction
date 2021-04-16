@@ -14,7 +14,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
 
-api_key = os.environ['TMDB_API_KEY'] #Enter your own API key here to run the code below. 
+api_key = "f18f986c449c9585986f07ecbd535291" #os.environ['TMDB_API_KEY'] #Enter your own API key here to run the code below. 
 # Generate your own API key as explained above :)
 
 
