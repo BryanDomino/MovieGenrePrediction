@@ -1,5 +1,5 @@
 ---
-title: "Movie Genre Validator"
+title: "NewFeature Movie Genre Validator"
 runtime: shiny
 output: 
   flexdashboard::flex_dashboard:
