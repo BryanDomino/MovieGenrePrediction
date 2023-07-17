@@ -1,9 +1,9 @@
 ---
 title: "NewFeature Movie Genre Validator"
 runtime: shiny
-output: 
-  flexdashboard::flex_dashboard:
-    orientation: rows
+#output: 
+#  flexdashboard::flex_dashboard:
+#    orientation: rows
 ---
 
 ```{r global, include=FALSE}
