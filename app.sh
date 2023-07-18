@@ -1,5 +1,5 @@
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-if [ "$EXPECTED_BRANCH" -ne "$CURRENT_BRANCH" ]
+if [ "$EXPECTED_BRANCH" != "$CURRENT_BRANCH" ]
 then
   git checkout $EXPECTED_BRANCH
 fi
